@@ -7,6 +7,7 @@ import dynamic from 'next/dynamic';
 const Lottie = dynamic(() => import('lottie-react'), { ssr: false });
 import About from './About'
 import SkillsCarousel from "./SkillsCarousel";
+import Experience from './Experience';
 import Projects from './Projects'
 import Parallax from "./Parallax";
 import Contact from "./Contact";
@@ -100,14 +101,14 @@ const Home = () => {
                 <span className="border-0 border-red-500 md:text-2xl lg:text-3xl">&nbsp;I&apos;m </span>
                 <span className="text-blue-400 border-0 border-red-500 md:text-2xl lg:text-3xl font-semibold font-kapiler">&nbsp;Atul Raj</span>
               </div>
-              <div className="absolute lg:top-[19.5rem] md:top-[21rem] text-blue-400/80 text-sm tracking-wide font-light">
+              <div className="absolute lg:top-[19.5rem] md:top-[18.5rem] text-blue-400/80 text-sm tracking-wide font-light">
                 <ScramblingText data={introAnimatedText} delay={2000} />
               </div>
             </div>
-            <div className="absolute z-10 font-extrabold tracking-tighter text-white lg:text-8xl xl:text-9xl font-change2 top-[20rem] md:text-7xl sm3:text-7xl">FULLSTACK</div>
-            <div className="z-30 font-extrabold tracking-tighter text-white lg:text-8xl xl:text-9xl font-change2 font-stencil2 top-[20rem] absolute md:text-7xl sm3:text-7xl">FULLSTACK</div>
-            <div className="absolute z-10 font-extrabold tracking-tighter text-white lg:text-8xl xl:text-9xl font-change2 xl:top-[28rem] md:top-[25rem] lg:top-[26rem] md:text-7xl sm3:text-7xl"><span className="text-blue-400/30 font-stencil23">WEB</span><span className="sm1:block md:inline">&nbsp;DEVELOPER</span></div>
-            <div className="absolute z-30 font-extrabold tracking-tighter text-white lg:text-8xl xl:text-9xl font-change2 font-stencil2 md:top-[25rem] xl:top-[27.95rem] lg:top-[26rem] md:text-7xl sm3:text-7xl"><span className="text-blue-400/30 font-stencil23">WEB</span><span className="sm1:block md:inline">&nbsp;DEVELOPER</span></div>
+            <div className="absolute z-10 font-extrabold tracking-tighter text-white lg:text-8xl xl:text-9xl font-change2 md:top-[21.5rem] lg:top-[21rem] md:text-6xl lg:text-8xl">FULLSTACK</div>
+            <div className="z-30 font-extrabold tracking-tighter text-white lg:text-8xl xl:text-9xl font-change2 font-stencil2 md:top-[21.5rem] lg:top-[21rem] absolute md:text-6xl lg:text-8xl">FULLSTACK</div>
+            <div className="absolute z-10 font-extrabold tracking-tighter text-white lg:text-8xl xl:text-9xl font-change2 xl:top-[28rem] md:top-[27rem] lg:top-[27rem] md:text-6xl lg:text-8xl"><span className="text-blue-400/30 font-stencil23">WEB</span><span className="sm1:block md:inline">&nbsp;DEVELOPER</span></div>
+            <div className="absolute z-30 font-extrabold tracking-tighter text-white lg:text-8xl xl:text-9xl font-change2 font-stencil2 md:top-[27rem] xl:top-[27.95rem] lg:top-[27rem] md:text-6xl lg:text-8xl"><span className="text-blue-400/30 font-stencil23">WEB</span><span className="sm1:block md:inline">&nbsp;DEVELOPER</span></div>
           </div>
           <motion.div style={{ x:toRight3 }} className="tracking-tighter md:top-[24rem] lg:top-[21rem] absolute text-blue-400/30 z-0 overflow-hidden whitespace-nowrap text-9xl font-extrabold font-stencil24">design design design design design design design design design design design design design design design </motion.div>
           <motion.div style={{ x:toRight3 }} className="tracking-tighter md:top-[30rem] lg:top-[28rem] absolute text-blue-400/30 z-0 overflow-hidden whitespace-nowrap text-9xl font-extrabold font-stencil24">code code code code code code code code code code code code code code code code code code code code code code </motion.div>
@@ -130,36 +131,49 @@ const Home = () => {
           </div>
         </div>
         {/* Mobile Home */}
-        <div id="home" className="relative top-0 max-h-screen bg-cover border-0 border-red-500 sm1:block md:hidden">
-          <div className="w-full pt-20 m-auto border-0 border-red-500 opacity-1" id="main">
-            <div className="absolute w-2/5 text-5xl border-0 border-red-500 -right-4">
-              <Lottie animationData={threedSpheres} className="grayscale invert" loop={true}/>
+        <div id="home" className="sm1:block md:hidden bg-black">
+          {/* Clipped hero visual */}
+          <div className="relative top-0 overflow-hidden sm1:h-[34rem] sm2:h-[36rem] sm3:h-[38rem]">
+            <div className="w-full pt-20 m-auto opacity-1" id="main">
+              <div className="absolute w-2/5 text-5xl -right-4">
+                <Lottie animationData={threedSpheres} className="grayscale invert" loop={true}/>
+              </div>
+              <motion.div style={{ x:toRight2 }} className="top-[14rem] absolute text-blue-400/20 overflow-hidden whitespace-nowrap font-stencil24 sm1:text-4xl sm2:text-5xl font-extrabold">web web web web web web web web web web web web web web web web web web web web</motion.div>
+              <motion.div style={{ x:toRight2 }} className="top-[17rem] absolute text-blue-400/20 overflow-hidden whitespace-nowrap font-stencil24 sm1:text-4xl sm2:text-5xl font-extrabold">web web web web web web web web web web web web web web web web web web web web</motion.div>
+              <motion.div style={{ x:toRight2 }} className="top-[20rem] absolute text-blue-400/20 overflow-hidden whitespace-nowrap font-stencil24 sm1:text-4xl sm2:text-5xl font-extrabold">web web web web web web web web web web web web web web web web web web web web</motion.div>
+              <motion.div style={{ x:toRight2 }} className="top-[23rem] absolute text-blue-400/20 overflow-hidden whitespace-nowrap font-stencil24 sm1:text-4xl sm2:text-5xl font-extrabold">web web web web web web web web web web web web web web web web web web web web</motion.div>
+              <motion.div style={{ x:toRight2 }} className="top-[26rem] absolute text-white/20 overflow-hidden whitespace-nowrap font-stencil24 sm1:text-4xl sm2:text-5xl font-extrabold">web web web web web web web web web web web web web web web web web web web web</motion.div>
+              <div className="relative z-10 w-full m-auto -ml-4">
+                <Image src="/media/images/profile.jpeg" alt="" width={800} height={100} className="m-auto transition duration-300 transform grayscale"></Image>
+              </div>
+              <div className="absolute z-0 font-extrabold tracking-tighter text-center text-white font-change2 sm1:text-3xl sm2:text-4xl sm3:text-5xl left-3 sm1:top-[14rem] sm2:top-[15rem] sm2:left-0 sm3:left-8">FULLSTACK</div>
+              <div className="absolute z-20 font-extrabold tracking-tighter text-center text-white font-change2 font-stencil2 sm1:text-3xl sm2:text-4xl sm3:text-5xl left-3 sm1:top-[14rem] sm2:top-[15rem] sm2:left-0 sm3:left-8">FULLSTACK</div>
+              <div className="absolute z-20 font-extrabold tracking-tighter text-center font-change2 text-blue-400 sm1:text-4xl sm2:text-5xl sm3:text-6xl sm1:left-3 sm1:top-[17.5rem] sm2:top-[19rem] sm2:left-0 sm3:left-8">WEB</div>
+              <div className="absolute z-0 sm1:text-3xl sm2:text-4xl sm3:text-5xl font-extrabold tracking-tighter text-white font-change2 left-3 sm1:top-[21.5rem] sm2:left-0 sm3:left-8 sm2:top-[23rem]"><span>DEVELOPER</span></div>
+              <div className="absolute z-20 sm1:text-3xl sm2:text-4xl sm3:text-5xl font-extrabold tracking-tighter text-white font-change2 font-stencil2 left-3 sm1:top-[21.5rem] sm2:left-0 sm3:left-8 sm2:top-[23rem]"><span>DEVELOPER</span></div>
             </div>
-            <motion.div style={{ x:toRight2 }} className="top-[12rem] absolute text-blue-400/50 overflow-hidden whitespace-nowrap font-stencil24 text-6xl font-extrabold">web web web web web web web web web web web web web web web web web web web web</motion.div>
-            <motion.div style={{ x:toRight2 }} className="top-[15rem] absolute text-blue-400/50 overflow-hidden whitespace-nowrap font-stencil24 text-6xl font-extrabold">web web web web web web web web web web web web web web web web web web web web</motion.div>
-            <motion.div style={{ x:toRight2 }} className="top-[18rem] absolute text-blue-400/50 overflow-hidden whitespace-nowrap font-stencil24 text-6xl font-extrabold">web web web web web web web web web web web web web web web web web web web web</motion.div>
-            <motion.div style={{ x:toRight2 }} className="top-[21rem] absolute text-blue-400/50 overflow-hidden whitespace-nowrap font-stencil24 text-6xl font-extrabold">web web web web web web web web web web web web web web web web web web web web</motion.div>
-            <motion.div style={{ x:toRight2 }} className="top-[24rem] absolute text-white/50 overflow-hidden whitespace-nowrap font-stencil24 text-6xl font-extrabold">web web web web web web web web web web web web web web web web web web web web</motion.div>
-            <div className="relative z-10 w-full m-auto -ml-4 border-0 border-red-500">
-              <Image src="/media/images/meformal5.png" alt="" width={800} height={100} className="m-auto transition duration-300 transform grayscale"></Image>
+            {/* Social icons inside hero */}
+            <div className="z-50 flex flex-row absolute sm1:top-[29rem] sm2:top-[31rem] space-x-2 justify-end right-4">
+              <a href="https://github.com/AtulRaj37" target="_blank" rel="noreferrer">
+                <div className="p-2 mt-2 text-white rounded-full sm1:text-2xl"><FiGithub /></div>
+              </a>
+              <a href="https://www.linkedin.com/in/atulraj7" target="_blank" rel="noreferrer">
+                <div className="p-2 mt-2 text-white rounded-full sm1:text-2xl"><FaLinkedinIn /></div>
+              </a>
+              <a href="https://www.instagram.com/atulraj37" target="_blank" rel="noreferrer" >
+                <div className="p-2 mt-2 text-white rounded-full sm1:text-2xl"><FiInstagram /></div>
+              </a>
             </div>
-            <div className="absolute z-0 font-extrabold tracking-tighter text-center text-white font-change2 sm1:text-5xl left-3 sm1:top-[14rem] md:top-[17rem] sm2:top-[15rem] sm2:text-6xl sm2:left-0 sm3:left-8">FULLSTACK</div>
-            <div className="absolute z-20 font-extrabold tracking-tighter text-center text-white font-change2 font-stencil2 sm1:text-5xl left-3 sm1:top-[14rem] sm2:top-[15rem] md:top-[17rem] sm2:text-6xl sm2:left-0 sm3:left-8">FULLSTACK</div>
-            <div className="absolute z-20 font-extrabold tracking-tighter text-center font-change2 text-blue-400 sm1:text-6xl sm1:left-3 sm1:top-[17rem] sm2:top-[18rem] md:top-[20rem] sm2:left-0 sm3:left-8">WEB</div>
-            <div className="absolute z-0 text-5xl font-extrabold tracking-tighter text-white font-change2 left-3 sm1:top-[21rem] sm2:text-6xl sm2:left-0 sm3:left-8 sm2:top-[21rem]"><span className="">DEVELOPER</span></div>
-            <div className="absolute z-20 text-5xl font-extrabold tracking-tighter text-white font-change2 font-stencil2 left-3 sm1:top-[21rem] sm2:text-6xl sm2:left-0 sm3:left-8 sm2:top-[21rem]"><span className="">DEVELOPER</span></div>
           </div>
-          <div className="absolute z-40 w-11/12 text-sm text-white border-0 border-red-500 top-[28rem] sm3:left-[2rem] sm1:left-[1rem] sm1:hidden">Hello,I&apos;m <span className="font-bold text-blue-400">Atul Raj</span>,a passionate and creative <span className="font-bold text-blue-400">Full Stack Developer</span> focused on building modern, scalable and beautifully designed <span className="font-bold text-blue-400">web</span> and mobile applications that deliver exceptional user experiences.</div>
-          <div className="z-50 flex flex-row absolute sm1:top-[24rem] sm2:top-[25rem] md:top-[33rem] space-x-2 justify-end right-4">
-            <a href="https://github.com/AtulRaj37" target="_blank" rel="noreferrer">
-              <div className="p-2 mt-2 text-white rounded-full sm1:text-2xl"><FiGithub /></div>
-            </a>
-            <a href="https://www.linkedin.com/in/atulraj7" target="_blank" rel="noreferrer">
-              <div className="p-2 mt-2 text-white rounded-full sm1:text-2xl"><FaLinkedinIn /></div>
-            </a>
-            <a href="https://www.instagram.com/atulraj37" target="_blank" rel="noreferrer" >
-              <div className="p-2 mt-2 text-white rounded-full sm1:text-2xl"><FiInstagram /></div>
-            </a>
+          {/* Greeting + Scramble + Description — normal flow, always visible */}
+          <div className="px-5 pt-8 pb-6 text-white">
+            <div className="text-2xl font-bold">Hello, I&apos;m <span className="text-blue-400 font-kapiler">Atul Raj</span></div>
+            <div className="mt-3 text-blue-400/80 text-xs">
+              <ScramblingText data={introAnimatedText} delay={2000} />
+            </div>
+            <p className="mt-4 text-sm text-white/60 leading-relaxed">
+              Passionate <span className="font-bold text-blue-400">Full Stack Developer</span> focused on building modern, scalable and beautifully designed <span className="font-bold text-blue-400">web</span> and mobile applications that deliver exceptional user experiences.
+            </p>
           </div>
         </div>
         <div id="about" className="relative pt-32 border-0 border-red-500">
@@ -168,10 +182,13 @@ const Home = () => {
         <div className="sm1:hidden md:block">
           <Parallax />
         </div>
-        <div className="pt-32 border-0 border-red-500">
+        <div id="skills" className="pt-32 border-0 border-red-500">
           <SkillsCarousel />
         </div>
-        <div id="projects" className="pt-32 mt-56 border-0 border-red-500">
+        <div id="experience">
+          <Experience />
+        </div>
+        <div id="projects" className="border-0 border-red-500">
           <Projects />
         </div>
 

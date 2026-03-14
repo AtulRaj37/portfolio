@@ -148,11 +148,11 @@ const ContactNew = () => {
                                             </div>
                                         </div>
                                     </a>
-                                    <a href="tel:+91 9917763508">    
+                                    <a href="tel:+91 9470359450">    
                                         <div className='flex flex-row space-x-4'>
                                             <div className='text-blue-400 rounded-full md:p-3 sm1:p-2 sm1:text-2xl lg:text-4xl md:text-5xl bg-blue-400/30'><PiPhoneCallFill /></div>
                                             <div className='leading-[1rem]'>
-                                                <p className='sm1:text-md md:text-lg'>+91 9917763508</p>
+                                                <p className='sm1:text-md md:text-lg'>+91 9470359450</p>
                                                 <p className='sm1:text-sm md:text-sm text-white/50'>Call me at</p>
                                             </div>
                                         </div>

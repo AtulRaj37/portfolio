@@ -35,7 +35,9 @@ const Header = ({ isOpen,toggleClose,toggleOpen }) => {
         <div className='fixed right-0 flex justify-between mt-12 mr-20 border-0 border-red-500 w-fit'>
           <div className='text-sm border-0 border-blue-500'>
             <div><Link href='#about' className="hover:text-blue-400">About</Link></div>
+            <div><Link href='#skills' className="hover:text-blue-400">Skills</Link></div>
             <div><Link href='#projects' className="hover:text-blue-400">Projects</Link></div>
+            <div><Link href='#experience' className="hover:text-blue-400">Experience</Link></div>
             <div><Link scroll={false} href='#contact' className="hover:text-blue-400">Contact</Link></div>
           </div>
           <div className='text-sm border-0 border-green-500 ml-28'>

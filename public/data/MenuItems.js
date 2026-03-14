@@ -10,9 +10,19 @@ export const MenuItems = [
         name:'About',
     },
     {
+        id:25,
+        linkedSection:'#skills',
+        name:'Skills',
+    },
+    {
         id:3,
         linkedSection:'#projects',
         name:'Projects',
+    },
+    {
+        id:35,
+        linkedSection:'#experience',
+        name:'Experience',
     },
     {
         id:4,

@@ -2,7 +2,7 @@ import Image from 'next/image';
 import React from 'react'
 import { motion,useScroll,useTransform } from 'framer-motion'
 import Marquee from "react-fast-marquee";
-import { Skills } from '../../public/data/Skills'
+import { Skills, SkillCategories } from '../../public/data/Skills'
 
 const SkillsCarousel = () => {
     const { scrollYProgress } = useScroll()
@@ -105,6 +105,42 @@ const SkillsCarousel = () => {
               </div>
             </Marquee>
           </div> 
+
+          {/* Categorized Skills Grid */}
+          <div className="w-4/5 m-auto mt-20 border-0 border-red-500">
+            {SkillCategories.map((group) => (
+              <div key={group.category} className="mb-14">
+                {/* Category heading */}
+                <div className="flex items-center gap-3 mb-6">
+                  <span className="text-blue-400 text-lg">&#x276F;</span>
+                  <h3 className="text-white font-bold text-lg tracking-wide">{group.category}</h3>
+                  <div className="flex-1 h-px bg-white/10 ml-2"></div>
+                </div>
+                {/* Skills row */}
+                <div className="flex flex-wrap gap-6">
+                  {group.skills.map((skill, i) => (
+                    <div
+                      key={i}
+                      className="flex flex-col items-center gap-2 group cursor-default"
+                    >
+                      {skill.url ? (
+                        <div className="w-14 h-14 flex items-center justify-center rounded-xl bg-white/5 border border-white/10 group-hover:border-blue-400/60 group-hover:bg-blue-400/10 transition-all duration-200 p-2">
+                          <img src={skill.url} alt={skill.name} className="w-full h-full object-contain invert-[0.75]" />
+                        </div>
+                      ) : (
+                        <div className="w-14 h-14 flex items-center justify-center rounded-xl bg-white/5 border border-white/10 group-hover:border-blue-400/60 group-hover:bg-blue-400/10 transition-all duration-200 text-2xl font-bold text-white">
+                          {skill.icon}
+                        </div>
+                      )}
+                      <span className="text-white/60 text-xs text-center group-hover:text-white transition-colors duration-200 w-16 leading-tight">
+                        {skill.name}
+                      </span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            ))}
+          </div>
     </div>
   )
 }
