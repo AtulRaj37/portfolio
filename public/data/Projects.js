@@ -9,10 +9,10 @@ export const Project = [
     },
     {
         "id":2,
-        "name":"Portfolio",
-        "url":"https://github.com/Atul Raj/Portfolio",
-        "skills":["Next Js","Tailwind","framer motion","three"],
-        "desc":"Personal Portfolio website showing my skills and my work",
+        "name":"Portfolio Website",
+        "url":"https://github.com/AtulRaj37/Portfolio",
+        "skills":["Next.js","Tailwind","Framer Motion","Lottie","Figma","Jitter","Nodemailer","GSAP","react-confetti","Intersection Observer API"],
+        "desc":"Full-stack portfolio app built with Next.js & TailwindCSS, featuring animations with Framer Motion, GSAP & Lottie, design in Figma & Jitter, scroll effects via Intersection Observer API, and a Nodemailer-powered contact form.",
         "src":"/media/projects2/portfolio-proj.png",
     },
     {
