@@ -54,14 +54,13 @@ const SkillsCarousel = () => {
           </motion.div>
           <div className="mt-4 text-xl font-bold tracking-tighter text-center text-blue-400">Technical Proficiency</div>
           <div className="flex w-4/5 m-auto overflow-hidden border-0 border-red-500 mask-edges flex-nowrap">
-            <Marquee speed={10}>
+            <Marquee speed={6}>
               <div className="flex mt-20 space-x-20 animate-marquee">
                 {
                   Skills.map((skill)=>{
                     return(
                       <div key={skill.id} className="flex flex-col space-x-8 border-0 border-red-500">
-                        <Image src={skill.url} alt="" width={150} height={150} className="p-2 invert-75 rounded-0 aspect-square"/>
-                        <div className="w-3/5 p-2 m-auto mt-2 font-normal tracking-tighter text-center text-white border-0 border-blue-400 rounded-xl bg-white/20">{ skill.name }</div>
+                        <Image src={skill.url} alt={skill.name} width={150} height={150} className="p-2 invert-75 grayscale rounded-0 aspect-square"/>
                       </div>
                     )
                   })
@@ -72,8 +71,7 @@ const SkillsCarousel = () => {
                   Skills.map((skill)=>{
                     return(
                       <div key={skill.id} className="flex flex-col space-x-8 border-0 border-red-500">
-                        <Image src={skill.url} alt="" width={150} height={150} className="p-2 invert-75 rounded-0 aspect-square"/>
-                        <div className="w-3/5 p-2 m-auto mt-2 font-normal tracking-tighter text-center text-white border-0 border-blue-400 rounded-xl bg-white/20">{ skill.name }</div>
+                        <Image src={skill.url} alt={skill.name} width={150} height={150} className="p-2 invert-75 grayscale rounded-0 aspect-square"/>
                       </div>
                     )
                   })
@@ -84,8 +82,7 @@ const SkillsCarousel = () => {
                   Skills.map((skill)=>{
                     return(
                       <div key={skill.id} className="flex flex-col space-x-8 border-0 border-red-500">
-                        <Image src={skill.url} alt="" width={150} height={150} className="p-2 invert-75 rounded-0 aspect-square"/>
-                        <div className="w-3/5 p-2 m-auto mt-2 font-normal tracking-tighter text-center text-white border-0 border-blue-400 rounded-xl bg-white/20">{ skill.name }</div>
+                        <Image src={skill.url} alt={skill.name} width={150} height={150} className="p-2 invert-75 grayscale rounded-0 aspect-square"/>
                       </div>
                     )
                   })
@@ -96,8 +93,7 @@ const SkillsCarousel = () => {
                   Skills.map((skill)=>{
                     return(
                       <div key={skill.id} className="flex flex-col space-x-8 border-0 border-red-500">
-                        <Image src={skill.url} alt="" width={150} height={150} className="p-2 invert-75 rounded-0 aspect-square"/>
-                        <div className="w-3/5 p-2 m-auto mt-2 font-normal tracking-tighter text-center text-white border-0 border-blue-400 rounded-xl bg-white/20">{ skill.name }</div>
+                        <Image src={skill.url} alt={skill.name} width={150} height={150} className="p-2 invert-75 grayscale rounded-0 aspect-square"/>
                       </div>
                     )
                   })
@@ -125,7 +121,7 @@ const SkillsCarousel = () => {
                     >
                       {skill.url ? (
                         <div className="w-14 h-14 flex items-center justify-center rounded-xl bg-white/5 border border-white/10 group-hover:border-blue-400/60 group-hover:bg-blue-400/10 transition-all duration-200 p-2">
-                          <img src={skill.url} alt={skill.name} className="w-full h-full object-contain invert-[0.75]" />
+                          <img src={skill.url} alt={skill.name} className="w-full h-full object-contain drop-shadow-[0_0_6px_rgba(255,255,255,0.15)] group-hover:drop-shadow-[0_0_8px_rgba(96,165,250,0.5)]" />
                         </div>
                       ) : (
                         <div className="w-14 h-14 flex items-center justify-center rounded-xl bg-white/5 border border-white/10 group-hover:border-blue-400/60 group-hover:bg-blue-400/10 transition-all duration-200 text-2xl font-bold text-white">
