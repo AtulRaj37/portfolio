@@ -17,10 +17,11 @@ export const Project = [
     },
     {
         "id":3,
-        "name":"Blind Coding",
-        "url":"https://github.com/Atul Raj/ReverseCoding",
-        "skills":["React","Bootstrap"],
-        "desc":"Website for the Blind Coding Contest during BITS Pilani's annual technical fest - APOGEE 2023",
+        "name":"SyncVerse",
+        "url":"https://github.com/AtulRaj37/SyncVerse",
+        "live":"https://sync-verse.vercel.app",
+        "skills":["Next.js","TypeScript","Tailwind CSS","Framer Motion","Zustand","Node.js","Express.js","Socket.IO","WebRTC","Redis","PostgreSQL","Prisma ORM","Giphy API"],
+        "desc":"Full-stack real-time media room platform with synchronized playback, chat, GIF reactions, screen sharing via WebRTC, and Socket.IO + Redis Pub/Sub for scalability.",
         "src":"/media/projects2/blindcodingbgrm.png",
     },
     {

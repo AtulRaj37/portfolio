@@ -133,11 +133,12 @@ const Projects = () => {
             <div className='m-auto mt-16 mb-16 text-white border-0 border-blue-400 sm1:p-8 md:p-20 lg:p-4 xl:p-20 sm1:w-full lg:w-4/5 rounded-3xl bg-black/20 backdrop-filter backdrop-blur-sm'>
               <div className='flex justify-between'>
                 <p className='text-5xl font-extrabold underline underline-offset-8'>Portfolio <span className='text-blue-400'>Website</span></p>
-                <a href={'https://github.com/Atulraj37/Portfolio'} target="_blank" className='hover:scale-[1.2] transition ease-in-out duration-300'>
-                  <div className='pt-2'>
+                <div className='flex gap-3 items-start pt-2'>
+                  <a href={'https://atulraj-portfolio.vercel.app/'} target="_blank" className='hover:scale-[1.2] transition ease-in-out duration-300 text-blue-400 text-sm font-bold border border-blue-400 rounded-lg px-3 py-2'>Live ↗</a>
+                  <a href={'https://github.com/Atulraj37/Portfolio'} target="_blank" className='hover:scale-[1.2] transition ease-in-out duration-300'>
                     <span className="text-4xl"><FaGithub /></span>
-                  </div>
-                </a>
+                  </a>
+                </div>
               </div>
               <p className='mt-12'>
                 This is a full-stack app—my portfolio website designed to showcase my skills and projects. Developed using Next.js and styled with TailwindCSS, the site boasts a seamless and visually appealing interface. The design, crafted in Figma, incorporates engaging animations and mockups with Jitter, Framer Motion, GSAP, and Lottie files. Scroll effects, driven by the Intersection Observer API, add a dynamic touch to the user experience.Delve into the about section to learn about my academic journey and college life. The project section details the technologies used in my various endeavors, providing insights into my technical expertise. Additionally, a contact form, powered by Nodemailer, facilitates direct communication, ensuring a straightforward way for users to reach out.
@@ -159,11 +160,11 @@ const Projects = () => {
           </div>
         </div>
       </div>
-      {/* 2nd proj */}
+      {/* 2nd proj — SyncVerse */}
       <div className='relative mt-8 border-0 border-red-500'>
         <div className='relative border-0 border-blue-400'>
-          <Image src="/media/projects/blindcoding/blindcoding2.png" alt="" width={300} height={200} className='relative z-30 transition duration-300 ease-in-out -translate-x-1/2 border-0 border-red-500 cursor-pointer left-1/2 lg:hover:opacity-0' />
-          <Image src="/media/projects/blindcoding/blindcoding3.png" alt="" width={300} height={200} className='absolute top-0 z-20 -translate-x-1/2 border-0 border-red-500 sm1:hidden lg:block left-1/2'/>
+          <Image src="/media/projects/syncverse/syncverse1.png" alt="SyncVerse" width={300} height={200} className='relative z-30 transition duration-300 ease-in-out -translate-x-1/2 border-0 border-red-500 cursor-pointer left-1/2 lg:hover:opacity-0' />
+          <Image src="/media/projects/syncverse/syncverse2.png" alt="SyncVerse" width={300} height={200} className='absolute top-0 z-20 -translate-x-1/2 border-0 border-red-500 sm1:hidden lg:block left-1/2'/>
           <div className='absolute top-0 z-40 whitespace-nowrap overflow-hidden font-extrabold text-center sm1:text-[20rem] md:text-[30rem] lowercase text-white tracking-tighter border-0 border-red-500 w-fit h-fit p-0 leading-[24rem] mt-56'>02.</div>
           <Lottie animationData={sketch} className='absolute top-0 mt-64 -rotate-45 md:block sm1:hidden invert grayscale'/>
         </div>
@@ -171,27 +172,43 @@ const Projects = () => {
           <div className='bg-cover border-0 border-red-500 sm1:w-full lg:w-1/2'>
             <div className='m-auto mt-16 mb-16 text-white border-0 border-blue-400 sm1:p-8 md:p-20 lg:p-4 xl:p-20 sm1:w-full lg:w-4/5 rounded-3xl bg-black/20 backdrop-filter backdrop-blur-sm'>
               <div className='flex justify-between'>
-                <p className='text-5xl font-extrabold underline underline-offset-8'>Blind <span className='text-blue-400'>Coding&nbsp;</span></p>
-                <a href={'https://github.com/atulraj/ReverseCoding'} target="_blank" className='hover:scale-[1.2] transition ease-in-out duration-300'>
-                  <div className='pt-2'>
+                <p className='text-5xl font-extrabold underline underline-offset-8'>Sync<span className='text-blue-400'>Verse&nbsp;</span></p>
+                <div className='flex gap-3 items-start pt-2'>
+                  <a href={'https://sync-verse.vercel.app'} target="_blank" className='hover:scale-[1.2] transition ease-in-out duration-300 text-blue-400 text-sm font-bold border border-blue-400 rounded-lg px-3 py-2'>Live ↗</a>
+                  <a href={'https://github.com/AtulRaj37/SyncVerse'} target="_blank" className='hover:scale-[1.2] transition ease-in-out duration-300'>
                     <span className="text-4xl"><FaGithub /></span>
-                  </div>
-                </a>
+                  </a>
+                </div>
               </div>
               <p className='mt-12'>
-                Blind Coding is one of the flagship event held in APOGEE(2023) which is the annual technical fest of BITS Pilani(Pilani Campus).The website was utilized as the central hub for the 2 hour long coding event where participants had to write code for a DSA-based problem without being able to see the actual problem statement instead they have to guess the problem and its code from the outputs generated by the downloadable executable files the webapp catered to 100+ users and provided easy access to the executable files through the website for coding-related problems, and for Hacker Rank link where the contest was hosted.
+                SyncVerse is a full-stack real-time social media platform that allows users to create shared media rooms and enjoy synchronized video or music playback with friends. The system ensures all participants remain perfectly in sync through a server-authoritative playback architecture and drift-correction algorithm. Users can create or join rooms using invite links, chat live with emoji and GIF reactions, share playlists, and stream their screen using WebRTC. Supports YouTube, SoundCloud, local files, and screen sharing — built on Socket.IO with Redis Pub/Sub for real-time scalability across multiple server instances.
               </p>
               <p className='mt-10 text-2xl font-extrabold text-blue-400'>Tech stack used :</p>
               <div className='flex flex-wrap mt-4 -ml-2 space-x-2 space-y-2'>
-                <p className='p-2 mt-2 ml-2 text-white bg-white/20 rounded-xl'>React.js</p>
-                <p className='p-2 text-white bg-white/20 rounded-xl'>Python</p>
-                <p className='p-2 text-white bg-white/20 rounded-xl'>Vanilla CSS</p>
+                <p className='p-2 mt-2 ml-2 text-white bg-white/20 rounded-xl'>Next.js</p>
+                <p className='p-2 text-white bg-white/20 rounded-xl'>TypeScript</p>
+                <p className='p-2 text-white bg-white/20 rounded-xl'>Tailwind CSS</p>
+                <p className='p-2 text-white bg-white/20 rounded-xl'>Framer Motion</p>
+                <p className='p-2 text-white bg-white/20 rounded-xl'>Zustand</p>
+                <p className='p-2 text-white bg-white/20 rounded-xl'>React Player</p>
+                <p className='p-2 text-white bg-white/20 rounded-xl'>Node.js</p>
+                <p className='p-2 text-white bg-white/20 rounded-xl'>Express.js</p>
+                <p className='p-2 text-white bg-white/20 rounded-xl'>Socket.IO</p>
+                <p className='p-2 text-white bg-white/20 rounded-xl'>WebRTC</p>
+                <p className='p-2 text-white bg-white/20 rounded-xl'>Redis Pub/Sub</p>
+                <p className='p-2 text-white bg-white/20 rounded-xl'>PostgreSQL</p>
+                <p className='p-2 text-white bg-white/20 rounded-xl'>Prisma ORM</p>
+                <p className='p-2 text-white bg-white/20 rounded-xl'>Giphy API</p>
+                <p className='p-2 text-white bg-white/20 rounded-xl'>Vercel</p>
+                <p className='p-2 text-white bg-white/20 rounded-xl'>Render</p>
+                <p className='p-2 text-white bg-white/20 rounded-xl'>Upstash Redis</p>
+                <p className='p-2 text-white bg-white/20 rounded-xl'>Neon PostgreSQL</p>
               </div>
             </div>
           </div>
           <div className='mt-8 border-0 border-red-500 sm1:w-full lg:w-1/2'>
             <Lottie animationData={blindcoding} className="overflow-hidden border-0 border-red-500 pt-36 sm1:hidden lg:flex h-fit rounded-3xl invert-0" loop={true}/>
-          </div> 
+          </div>
         </div>
       </div>
       {/* 3rd proj */}
