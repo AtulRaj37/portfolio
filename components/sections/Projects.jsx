@@ -211,11 +211,11 @@ const Projects = () => {
           </div>
         </div>
       </div>
-      {/* 3rd proj */}
+      {/* 3rd proj — JournEaze */}
       <div className='relative mt-8 border-0 border-red-500'>
         <div className='relative border-0 border-blue-400'>
-          <Image src="/media/projects/optistock/optistock2.png" alt="" width={300} height={200} className='relative z-30 transition duration-300 ease-in-out -translate-x-1/2 border-0 border-red-500 cursor-pointer left-1/2 lg:hover:opacity-0' />
-          <Image src="/media/projects/optistock/optistock1.png" alt="" width={300} height={200} className='absolute top-0 z-20 -translate-x-1/2 border-0 border-red-500 sm1:hidden lg:block left-1/2'/>
+          <Image src="/media/projects/journeaze/journeaze1.png" alt="JournEaze" width={300} height={200} className='relative z-30 transition duration-300 ease-in-out -translate-x-1/2 border-0 border-red-500 cursor-pointer left-1/2 lg:hover:opacity-0' />
+          <Image src="/media/projects/journeaze/journeaze2.png" alt="JournEaze" width={300} height={200} className='absolute top-0 z-20 -translate-x-1/2 border-0 border-red-500 sm1:hidden lg:block left-1/2'/>
           <div className='absolute top-0 z-40 whitespace-nowrap overflow-hidden font-extrabold text-center sm1:text-[20rem] md:text-[30rem] lowercase text-white tracking-tighter border-0 border-red-500 w-fit h-fit p-0 leading-[24rem] mt-56 md:-left-[10rem] lg:left-1/2'>03.</div>
           <Lottie animationData={sketch} className='absolute top-0 mt-64 -rotate-45 md:block sm1:hidden invert grayscale left-1/2'/>
         </div>
@@ -226,25 +226,31 @@ const Projects = () => {
           <div className='bg-cover border-0 border-red-500 sm1:w-full lg:w-1/2'>
             <div className='m-auto mt-16 mb-16 text-white border-0 border-blue-400 sm1:p-8 md:p-20 lg:p-4 xl:p-20 sm1:w-full lg:w-4/5 rounded-3xl bg-black/20 backdrop-filter backdrop-blur-sm'>
               <div className='flex justify-between'>
-                <p className='text-5xl font-extrabold underline underline-offset-8'>Opti<span className='text-blue-400'>Stock</span></p>
-                <a href={'https://github.com/atulraj/OptiStock-Inventory_Management_Software'} target="_blank" className='hover:scale-[1.2] transition ease-in-out duration-300'>
-                  <div className='pt-2'>
+                <p className='text-5xl font-extrabold underline underline-offset-8'>Journ<span className='text-blue-400'>Eaze</span></p>
+                <div className='flex gap-3 items-start pt-2'>
+                  <a href={'https://journ-eaze-web.vercel.app'} target="_blank" className='hover:scale-[1.2] transition ease-in-out duration-300 text-blue-400 text-sm font-bold border border-blue-400 rounded-lg px-3 py-2'>Live ↗</a>
+                  <a href={'https://github.com/AtulRaj37/JournEaze'} target="_blank" className='hover:scale-[1.2] transition ease-in-out duration-300'>
                     <span className="text-4xl"><FaGithub /></span>
-                  </div>
-                </a>
+                  </a>
+                </div>
               </div>
               <p className='mt-12'>
-                Introducing a robust full-stack inventory management app built with the MERN stack—enabling seamless user authentication through JWT. This application empowers users to effortlessly add and remove items from the inventory while efficiently tracking the availability of products in the store. Leveraging the power of Redux, the app ensures streamlined state management, enhancing the overall user experience. Experience a sophisticated solution for inventory control and management with user-friendly features tailored for efficient business operations.
+                Introducing an intelligent, full-stack travel planning platform built with a highly scalable Next.js and NestJS monorepo architecture—enabling seamless, secure user authentication through JWT. This application empowers travelers to effortlessly generate highly detailed, AI-curated day-by-day itineraries while efficiently tracking group expenses and collaborating on interactive destination maps. Leveraging the power of PostgreSQL and a beautifully crafted custom design system, the app ensures streamlined data management and an exceptionally smooth, visually stunning user experience. Experience a sophisticated solution for modern trip coordination, fully equipped with live weather forecasts, native offline PWA access, and one-click PDF exports tailored for flawless adventures.
               </p>
               <p className='mt-10 text-2xl font-extrabold text-blue-400'>Tech stack used :</p>
               <div className='flex flex-wrap mt-4 -ml-2 space-x-2 space-y-2'>
-                <p className='p-2 mt-2 ml-2 text-white bg-white/20 rounded-xl'>React</p>
-                <p className='p-2 text-white bg-white/20 rounded-xl'>Tailwind</p>
-                <p className='p-2 text-white bg-white/20 rounded-xl'>Node</p>
-                <p className='p-2 text-white bg-white/20 rounded-xl'>Express</p>
-                <p className='p-2 text-white bg-white/20 rounded-xl'>Nodemailer</p>
-                <p className='p-2 text-white bg-white/20 rounded-xl'>Redux</p>
-                <p className='p-2 text-white bg-white/20 rounded-xl'>MongoDB</p>
+                <p className='p-2 mt-2 ml-2 text-white bg-white/20 rounded-xl'>Next.js</p>
+                <p className='p-2 text-white bg-white/20 rounded-xl'>NestJS</p>
+                <p className='p-2 text-white bg-white/20 rounded-xl'>TypeScript</p>
+                <p className='p-2 text-white bg-white/20 rounded-xl'>Tailwind CSS</p>
+                <p className='p-2 text-white bg-white/20 rounded-xl'>PostgreSQL</p>
+                <p className='p-2 text-white bg-white/20 rounded-xl'>Prisma</p>
+                <p className='p-2 text-white bg-white/20 rounded-xl'>JWT</p>
+                <p className='p-2 text-white bg-white/20 rounded-xl'>Groq AI</p>
+                <p className='p-2 text-white bg-white/20 rounded-xl'>Docker</p>
+                <p className='p-2 text-white bg-white/20 rounded-xl'>Framer Motion</p>
+                <p className='p-2 text-white bg-white/20 rounded-xl'>Leaflet Maps</p>
+                <p className='p-2 text-white bg-white/20 rounded-xl'>PWA</p>
               </div>
             </div>
           </div>

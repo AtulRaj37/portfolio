@@ -1,10 +1,11 @@
 export const Project = [
     {
         "id":1,
-        "name":"OptiStock",
-        "url":"https://github.com/Atul Raj/OptiStock-Inventory_Management_Software",
-        "skills":["React","Tailwind","NODE","EXPRESS","Mongodb"],
-        "desc":"MERN Stack Inventory Management Software",
+        "name":"JournEaze",
+        "url":"https://github.com/AtulRaj37/JournEaze",
+        "live":"https://journ-eaze-web.vercel.app",
+        "skills":["Next.js","NestJS","TypeScript","Tailwind CSS","PostgreSQL","Prisma","JWT","Groq AI","Docker","Framer Motion","Leaflet Maps","PWA"],
+        "desc":"Intelligent travel planning platform built with Next.js and NestJS monorepo, featuring AI-curated itineraries, expense tracking, interactive maps, live weather forecasts, and offline PWA access.",
         "src":"/media/projects2/optistock.png",
     },
     {
