@@ -41,7 +41,7 @@ const Header = ({ isOpen,toggleClose,toggleOpen }) => {
             <div><Link scroll={false} href='#contact' className="hover:text-blue-400">Contact</Link></div>
           </div>
           <div className='text-sm border-0 border-green-500 ml-28'>
-            <div><Link href="https://drive.google.com/file/d/1KgTNsw2jPpuE-QCrm2txd_l8RejSsj-M/view?usp=sharing" target="_blank" alt="" className="hover:text-blue-400">Resume</Link></div>
+            <div><Link href="/Atul Resume.pdf" target="_blank" alt="" className="hover:text-blue-400">Resume</Link></div>
             <div><Link href="https://github.com/AtulRaj37" target="_blank" rel="noreferrer" className="hover:text-blue-400">Github</Link></div>
             <div><Link href="https://www.linkedin.com/in/atulraj7" target="_blank" rel="noreferrer" className="hover:text-blue-400">LinkedIn</Link></div>
           </div>
