@@ -86,7 +86,7 @@ const ContactNew = () => {
                                 <a className='text-blue-400 rounded-full sm1:p-2 md:p-4 bg-blue-400/20' href="https://github.com/AtulRaj37" target="_blank" rel="noreferrer" ><FiGithub /></a>
                                 <a className='text-blue-400 rounded-full sm1:p-2 md:p-4 bg-blue-400/20' href="https://www.instagram.com/raj_atul37" target="_blank" rel="noreferrer"><FiInstagram /></a>
                                 <a className='text-blue-400 rounded-full sm1:p-2 md:p-4 bg-blue-400/20' href="https://www.linkedin.com/in/atulraj7" target="_blank" rel="noreferrer"><FaLinkedinIn /></a>
-                                <a className='text-blue-400 rounded-full sm1:p-2 md:p-4 bg-blue-400/20' href="/Atul Resume.pdf" target="_blank"><IoDocumentTextOutline /></a>
+                                <a className='text-blue-400 rounded-full sm1:p-2 md:p-4 bg-blue-400/20' href="/atul updated.pdf" target="_blank"><IoDocumentTextOutline /></a>
                             </div>
                         </div>           
                     </div>
@@ -172,7 +172,7 @@ const ContactNew = () => {
                                         <a className='text-blue-400 rounded-full sm1:p-2 md:p-4 bg-blue-400/20' href="https://github.com/AtulRaj37" target="_blank" rel="noreferrer" ><FiGithub /></a>
                                         <a className='text-blue-400 rounded-full sm1:p-2 md:p-4 bg-blue-400/20' href="https://www.instagram.com/raj_atul37" target="_blank" rel="noreferrer"><FiInstagram /></a>
                                         <a className='text-blue-400 rounded-full sm1:p-2 md:p-4 bg-blue-400/20' href="https://www.linkedin.com/in/atulraj7" target="_blank" rel="noreferrer"><FaLinkedinIn /></a>
-                                        <a className='text-blue-400 rounded-full sm1:p-2 md:p-4 bg-blue-400/20' href="/Atul Resume.pdf" target="_blank"><IoDocumentTextOutline /></a>
+                                        <a className='text-blue-400 rounded-full sm1:p-2 md:p-4 bg-blue-400/20' href="/atul updated.pdf" target="_blank"><IoDocumentTextOutline /></a>
                                     </div>
                                 </div>           
                             </div>

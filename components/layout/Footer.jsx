@@ -44,7 +44,7 @@ const Footer = () => {
                className="w-9 h-9 flex items-center justify-center rounded-full border border-white/10 text-white/50 hover:text-blue-400 hover:border-blue-400/50 transition-all duration-200 text-lg">
               <FiInstagram />
             </a>
-            <a href="/Atul Resume.pdf" target="_blank"
+            <a href="/atul updated.pdf" target="_blank"
                className="w-9 h-9 flex items-center justify-center rounded-full border border-white/10 text-white/50 hover:text-blue-400 hover:border-blue-400/50 transition-all duration-200 text-lg">
               <IoDocumentTextOutline />
             </a>
