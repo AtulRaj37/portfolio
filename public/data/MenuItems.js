@@ -31,7 +31,7 @@ export const MenuItems = [
     },
     {
         id:5,
-        linkedSection:'/atul updated.pdf',
+        linkedSection:'/atul-updated-resume.pdf',
         name:'Resume',
     },
 ]
