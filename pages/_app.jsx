@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import { useState,useEffect } from 'react'
+import { Analytics } from '@vercel/analytics/react'
 import '../styles/globals.css'
 import { Noto_Sans } from 'next/font/google' 
 import { motion } from 'framer-motion'
@@ -28,6 +29,7 @@ const MyApp = ({ Component, pageProps }) => {
           <link rel="apple-touch-icon" href="/icons/icon-192x192.png" />
         </Head>
         <Component {...pageProps } className="overflow-hidden" />
+        <Analytics />
       </>
     ) 
   }
@@ -57,6 +59,7 @@ const MyApp = ({ Component, pageProps }) => {
                     <Component {...pageProps}/>
                   </motion.div>
                 </Layout>
+                <Analytics />
               </>
           }
         </> 
