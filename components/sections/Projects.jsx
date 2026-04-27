@@ -8,6 +8,7 @@ import { FaGithub } from "react-icons/fa";
 import portfolio from '../../public/media/lotties/Portfolio(Project).json'
 import blindcoding from '../../public/media/lotties/BlindCoding(Projects).json'
 import optistock from '../../public/media/lotties/Optistock(Project).json'
+import pitchpulse from '../../public/media/lotties/PitchPulse(Project).json'
 import sketch from '../../public/media/lotties/AnimatedMarker(Projects).json'
 
 const Projects = () => {
@@ -253,6 +254,56 @@ const Projects = () => {
                 <p className='p-2 text-white bg-white/20 rounded-xl'>PWA</p>
               </div>
             </div>
+          </div>
+        </div>
+      </div>
+      {/* 4th proj — PitchPulse */}
+      <div className='relative mt-8 border-0 border-red-500'>
+        <div className='relative border-0 border-blue-400'>
+          <Image src="/media/projects/pitchpulse/phone1.png" alt="PitchPulse" width={300} height={200} className='relative z-30 transition duration-300 ease-in-out -translate-x-1/2 border-0 border-red-500 cursor-pointer left-1/2 lg:hover:opacity-0' />
+          <Image src="/media/projects/pitchpulse/phone2.png" alt="PitchPulse" width={300} height={200} className='absolute top-0 z-20 -translate-x-1/2 border-0 border-red-500 sm1:hidden lg:block left-1/2'/>
+          <div className='absolute top-0 z-40 whitespace-nowrap overflow-hidden font-extrabold text-center sm1:text-[20rem] md:text-[30rem] lowercase text-white tracking-tighter border-0 border-red-500 w-fit h-fit p-0 leading-[24rem] mt-56'>04.</div>
+          <Lottie animationData={sketch} className='absolute top-0 mt-64 -rotate-45 md:block sm1:hidden invert grayscale'/>
+        </div>
+        <div className='relative flex mt-0 border-0 border-green-500 sm1:flex-col lg:flex-row'>
+          <div className='bg-cover border-0 border-red-500 sm1:w-full lg:w-1/2'>
+            <div className='m-auto mt-16 mb-16 text-white border-0 border-blue-400 sm1:p-8 md:p-20 lg:p-4 xl:p-20 sm1:w-full lg:w-4/5 rounded-3xl bg-black/20 backdrop-filter backdrop-blur-sm'>
+              <div className='flex justify-between'>
+                <p className='text-5xl font-extrabold underline underline-offset-8'>Pitch<span className='text-blue-400'>Pulse</span></p>
+                <div className='flex gap-3 items-start pt-2'>
+                  <a href={'https://github.com/AtulRaj37/PitchPulse'} target="_blank" className='hover:scale-[1.2] transition ease-in-out duration-300'>
+                    <span className="text-4xl"><FaGithub /></span>
+                  </a>
+                </div>
+              </div>
+              <p className='mt-12'>
+                PitchPulse is a full-stack, real-time cricket scoring platform purpose-built for hyper-local and gully cricket tournaments. It features an event-sourced scoring engine that captures every delivery with shot area, shot type, and bowler angle metadata — powering auto-generated ball-by-ball commentary, interactive wagon wheel visualizations, and deep player analytics. Scorers operate through a mobile-first command pad with undo, audit trail, and over-completion summaries. The platform supports full tournament management with league, round-robin, and knockout formats including auto-generated fixtures and live points tables. Matches can be shared instantly via QR codes or links, enabling real-time spectator mode powered by Socket.IO with Redis Pub/Sub for zero-delay synchronization across devices.
+              </p>
+              <p className='mt-10 text-2xl font-extrabold text-blue-400'>Tech stack used :</p>
+              <div className='flex flex-wrap mt-4 -ml-2 space-x-2 space-y-2'>
+                <p className='p-2 mt-2 ml-2 text-white bg-white/20 rounded-xl'>Next.js</p>
+                <p className='p-2 text-white bg-white/20 rounded-xl'>TypeScript</p>
+                <p className='p-2 text-white bg-white/20 rounded-xl'>Tailwind CSS</p>
+                <p className='p-2 text-white bg-white/20 rounded-xl'>Framer Motion</p>
+                <p className='p-2 text-white bg-white/20 rounded-xl'>Zustand</p>
+                <p className='p-2 text-white bg-white/20 rounded-xl'>GSAP</p>
+                <p className='p-2 text-white bg-white/20 rounded-xl'>D3.js</p>
+                <p className='p-2 text-white bg-white/20 rounded-xl'>Fastify</p>
+                <p className='p-2 text-white bg-white/20 rounded-xl'>Socket.IO</p>
+                <p className='p-2 text-white bg-white/20 rounded-xl'>Redis</p>
+                <p className='p-2 text-white bg-white/20 rounded-xl'>PostgreSQL</p>
+                <p className='p-2 text-white bg-white/20 rounded-xl'>Prisma ORM</p>
+                <p className='p-2 text-white bg-white/20 rounded-xl'>Zod</p>
+                <p className='p-2 text-white bg-white/20 rounded-xl'>Docker</p>
+                <p className='p-2 text-white bg-white/20 rounded-xl'>Turborepo</p>
+                <p className='p-2 text-white bg-white/20 rounded-xl'>PWA</p>
+                <p className='p-2 text-white bg-white/20 rounded-xl'>QR Code</p>
+                <p className='p-2 text-white bg-white/20 rounded-xl'>Recharts</p>
+              </div>
+            </div>
+          </div>
+          <div className='mt-8 border-0 border-red-500 sm1:w-full lg:w-1/2'>
+            <Lottie animationData={pitchpulse} className="overflow-hidden border-0 border-red-500 pt-36 sm1:hidden lg:flex h-fit rounded-3xl invert-0" loop={true}/>
           </div>
         </div>
       </div>

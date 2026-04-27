@@ -1,5 +1,14 @@
 export const Project = [
     {
+        "id":0,
+        "name":"PitchPulse",
+        "url":"https://github.com/AtulRaj37/PitchPulse",
+        "live":"",
+        "skills":["Next.js","TypeScript","Tailwind CSS","Framer Motion","Zustand","GSAP","D3.js","Fastify","Socket.IO","Redis","PostgreSQL","Prisma ORM","Zod","Docker","Turborepo","PWA","QR Code","Recharts"],
+        "desc":"PitchPulse is a full-stack, real-time cricket scoring platform purpose-built for hyper-local and gully cricket tournaments. It features an event-sourced scoring engine that captures every delivery with shot area, shot type, and bowler angle metadata — powering auto-generated ball-by-ball commentary, interactive wagon wheel visualizations, and deep player analytics. Scorers operate through a mobile-first command pad with undo, audit trail, and over-completion summaries. The platform supports full tournament management with league, round-robin, and knockout formats including auto-generated fixtures and live points tables. Matches can be shared instantly via QR codes or links, enabling real-time spectator mode powered by Socket.IO with Redis Pub/Sub for zero-delay synchronization across devices.",
+        "src":"/media/projects2/pitchpulse.png",
+    },
+    {
         "id":1,
         "name":"JournEaze",
         "url":"https://github.com/AtulRaj37/JournEaze",
