@@ -45,6 +45,19 @@ a {
   scroll-behavior: smooth;
 }
 
+/* Hide default cursor on desktop — custom cursor replaces it */
+@media (pointer: fine) {
+  *,
+  a,
+  button,
+  [role="button"],
+  input,
+  textarea,
+  select {
+    cursor: none !important;
+  }
+}
+
 .box-shadow-out-navbar {
   box-shadow: 1px 1px 300px rgba(255, 255, 255, 0.3);
 }

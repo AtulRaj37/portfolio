@@ -18,16 +18,62 @@ const MyApp = ({ Component, pageProps }) => {
   useEffect(() => {
     setTimeout(() => setLoading(false), 8000)
   }, [])
+  const seoHead = (
+    <Head>
+      <title>Atul Raj | Full Stack Developer Portfolio</title>
+      <meta name="description" content="Atul Raj — Full Stack Developer specializing in Next.js, TypeScript, React, Node.js, PostgreSQL, and real-time systems. Explore my projects including SyncVerse, JournEaze, PitchPulse, and more." />
+      <meta name="keywords" content="Atul Raj, Full Stack Developer, Portfolio, Next.js, React, Node.js, TypeScript, BITS Pilani, SyncVerse, JournEaze, PitchPulse, Web Developer, Software Engineer" />
+      <meta name="author" content="Atul Raj" />
+      <meta name="robots" content="index, follow" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <link rel="canonical" href="https://atulraj-portfolio.vercel.app" />
+
+      {/* Open Graph / Facebook / LinkedIn / Discord */}
+      <meta property="og:type" content="website" />
+      <meta property="og:url" content="https://atulraj-portfolio.vercel.app" />
+      <meta property="og:title" content="Atul Raj | Full Stack Developer" />
+      <meta property="og:description" content="Full Stack Developer specializing in Next.js, TypeScript, React, and real-time systems. Building scalable, production-ready web applications." />
+      <meta property="og:image" content="https://atulraj-portfolio.vercel.app/og-image.png" />
+      <meta property="og:image:width" content="1200" />
+      <meta property="og:image:height" content="630" />
+      <meta property="og:site_name" content="Atul Raj Portfolio" />
+
+      {/* Twitter Card */}
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:title" content="Atul Raj | Full Stack Developer" />
+      <meta name="twitter:description" content="Full Stack Developer specializing in Next.js, TypeScript, React, and real-time systems." />
+      <meta name="twitter:image" content="https://atulraj-portfolio.vercel.app/og-image.png" />
+
+      {/* Favicons */}
+      <link rel="icon" href="/icons/icon.svg" type="image/svg+xml" />
+      <link rel="icon" href="/icons/icon-32x32.png" sizes="32x32" type="image/png" />
+      <link rel="icon" href="/icons/icon-16x16.png" sizes="16x16" type="image/png" />
+      <link rel="apple-touch-icon" href="/icons/icon-192x192.png" />
+
+      {/* JSON-LD Structured Data */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Person",
+            name: "Atul Raj",
+            url: "https://atulraj-portfolio.vercel.app",
+            jobTitle: "Full Stack Developer",
+            sameAs: [
+              "https://github.com/AtulRaj37",
+              "https://www.linkedin.com/in/atulraj7",
+            ],
+          }),
+        }}
+      />
+    </Head>
+  )
+
   if(Component.getLayout){
     return(
       <>
-        <Head>
-          <title>Atul Raj | Portfolio</title>
-          <link rel="icon" href="/icons/icon.svg" type="image/svg+xml" />
-          <link rel="icon" href="/icons/icon-32x32.png" sizes="32x32" type="image/png" />
-          <link rel="icon" href="/icons/icon-16x16.png" sizes="16x16" type="image/png" />
-          <link rel="apple-touch-icon" href="/icons/icon-192x192.png" />
-        </Head>
+        {seoHead}
         <Component {...pageProps } className="overflow-hidden" />
         <Analytics />
       </>
@@ -36,13 +82,7 @@ const MyApp = ({ Component, pageProps }) => {
 
   return(
         <>
-          <Head>
-              <title>Atul Raj | Portfolio</title>
-              <link rel="icon" href="/icons/icon.svg" type="image/svg+xml" />
-              <link rel="icon" href="/icons/icon-32x32.png" sizes="32x32" type="image/png" />
-              <link rel="icon" href="/icons/icon-16x16.png" sizes="16x16" type="image/png" />
-              <link rel="apple-touch-icon" href="/icons/icon-192x192.png" />
-          </Head>
+          {seoHead}
           {
             loading ? 
               <>

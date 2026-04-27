@@ -5,6 +5,7 @@ import { useSpring,animated } from "react-spring"
 import dynamic from 'next/dynamic';
 const Lottie = dynamic(() => import('lottie-react'), { ssr: false });
 import { FaGithub } from "react-icons/fa";
+import MagneticButton from '../ui/MagneticButton';
 import portfolio from '../../public/media/lotties/Portfolio(Project).json'
 import blindcoding from '../../public/media/lotties/BlindCoding(Projects).json'
 import optistock from '../../public/media/lotties/Optistock(Project).json'
@@ -120,8 +121,8 @@ const Projects = () => {
       {/* 1st proj */}
       <div className='relative mt-20 border-0 border-red-500'>
         <div className='relative border-0 border-blue-400'>
-          <Image src="/media/projects/portfolio/portfolio2.png" alt="" width={300} height={200} className='relative z-30 transition duration-300 ease-in-out -translate-x-1/2 border-0 border-red-500 cursor-pointer left-1/2 lg:hover:opacity-0' />
-          <Image src="/media/projects/portfolio/portfolio3.png" alt="" width={300} height={200} className='absolute top-0 z-20 -translate-x-1/2 border-0 border-red-500 sm1:hidden lg:block left-1/2'/>
+          <Image src="/media/projects/portfolio/portfolio2.webp" alt="Portfolio Website" width={300} height={200} className='relative z-30 transition duration-300 ease-in-out -translate-x-1/2 border-0 border-red-500 cursor-pointer left-1/2 lg:hover:opacity-0' />
+          <Image src="/media/projects/portfolio/portfolio3.webp" alt="Portfolio Website" width={300} height={200} className='absolute top-0 z-20 -translate-x-1/2 border-0 border-red-500 sm1:hidden lg:block left-1/2'/>
           {/* <div className='absolute top-0 w-full border-2 border-red-500 h-[40rem]'></div> */}
           <div className='absolute top-0 z-40 whitespace-nowrap overflow-hidden font-extrabold text-center sm1:text-[20rem] md:text-[30rem] lowercase text-white tracking-tighter border-0 border-red-500 w-fit h-fit p-0 leading-[24rem] mt-56 md:-left-[10rem] lg:left-1/2'>01.</div>
           <Lottie animationData={sketch} className='absolute top-0 mt-64 -rotate-45 md:block sm1:hidden invert grayscale left-1/2'/>
@@ -135,10 +136,10 @@ const Projects = () => {
               <div className='flex justify-between'>
                 <p className='text-5xl font-extrabold underline underline-offset-8'>Portfolio <span className='text-blue-400'>Website</span></p>
                 <div className='flex gap-3 items-start pt-2'>
-                  <a href={'https://atulraj-portfolio.vercel.app/'} target="_blank" className='hover:scale-[1.2] transition ease-in-out duration-300 text-blue-400 text-sm font-bold border border-blue-400 rounded-lg px-3 py-2'>Live ↗</a>
-                  <a href={'https://github.com/Atulraj37/Portfolio'} target="_blank" className='hover:scale-[1.2] transition ease-in-out duration-300'>
+                  <MagneticButton><a href={'https://atulraj-portfolio.vercel.app/'} target="_blank" className='hover:scale-[1.2] transition ease-in-out duration-300 text-blue-400 text-sm font-bold border border-blue-400 rounded-lg px-3 py-2'>Live ↗</a></MagneticButton>
+                  <MagneticButton><a href={'https://github.com/Atulraj37/Portfolio'} target="_blank" className='hover:scale-[1.2] transition ease-in-out duration-300'>
                     <span className="text-4xl"><FaGithub /></span>
-                  </a>
+                  </a></MagneticButton>
                 </div>
               </div>
               <p className='mt-12'>
@@ -164,8 +165,8 @@ const Projects = () => {
       {/* 2nd proj — SyncVerse */}
       <div className='relative mt-8 border-0 border-red-500'>
         <div className='relative border-0 border-blue-400'>
-          <Image src="/media/projects/syncverse/syncverse1.png" alt="SyncVerse" width={300} height={200} className='relative z-30 transition duration-300 ease-in-out -translate-x-1/2 border-0 border-red-500 cursor-pointer left-1/2 lg:hover:opacity-0' />
-          <Image src="/media/projects/syncverse/syncverse2.png" alt="SyncVerse" width={300} height={200} className='absolute top-0 z-20 -translate-x-1/2 border-0 border-red-500 sm1:hidden lg:block left-1/2'/>
+          <Image src="/media/projects/syncverse/syncverse1.webp" alt="SyncVerse" width={300} height={200} className='relative z-30 transition duration-300 ease-in-out -translate-x-1/2 border-0 border-red-500 cursor-pointer left-1/2 lg:hover:opacity-0' />
+          <Image src="/media/projects/syncverse/syncverse2.webp" alt="SyncVerse" width={300} height={200} className='absolute top-0 z-20 -translate-x-1/2 border-0 border-red-500 sm1:hidden lg:block left-1/2'/>
           <div className='absolute top-0 z-40 whitespace-nowrap overflow-hidden font-extrabold text-center sm1:text-[20rem] md:text-[30rem] lowercase text-white tracking-tighter border-0 border-red-500 w-fit h-fit p-0 leading-[24rem] mt-56'>02.</div>
           <Lottie animationData={sketch} className='absolute top-0 mt-64 -rotate-45 md:block sm1:hidden invert grayscale'/>
         </div>
@@ -175,10 +176,10 @@ const Projects = () => {
               <div className='flex justify-between'>
                 <p className='text-5xl font-extrabold underline underline-offset-8'>Sync<span className='text-blue-400'>Verse&nbsp;</span></p>
                 <div className='flex gap-3 items-start pt-2'>
-                  <a href={'https://sync-verse.vercel.app'} target="_blank" className='hover:scale-[1.2] transition ease-in-out duration-300 text-blue-400 text-sm font-bold border border-blue-400 rounded-lg px-3 py-2'>Live ↗</a>
-                  <a href={'https://github.com/AtulRaj37/SyncVerse'} target="_blank" className='hover:scale-[1.2] transition ease-in-out duration-300'>
+                  <MagneticButton><a href={'https://sync-verse.vercel.app'} target="_blank" className='hover:scale-[1.2] transition ease-in-out duration-300 text-blue-400 text-sm font-bold border border-blue-400 rounded-lg px-3 py-2'>Live ↗</a></MagneticButton>
+                  <MagneticButton><a href={'https://github.com/AtulRaj37/SyncVerse'} target="_blank" className='hover:scale-[1.2] transition ease-in-out duration-300'>
                     <span className="text-4xl"><FaGithub /></span>
-                  </a>
+                  </a></MagneticButton>
                 </div>
               </div>
               <p className='mt-12'>
@@ -215,8 +216,8 @@ const Projects = () => {
       {/* 3rd proj — JournEaze */}
       <div className='relative mt-8 border-0 border-red-500'>
         <div className='relative border-0 border-blue-400'>
-          <Image src="/media/projects/journeaze/journeaze1.png" alt="JournEaze" width={300} height={200} className='relative z-30 transition duration-300 ease-in-out -translate-x-1/2 border-0 border-red-500 cursor-pointer left-1/2 lg:hover:opacity-0' />
-          <Image src="/media/projects/journeaze/journeaze2.png" alt="JournEaze" width={300} height={200} className='absolute top-0 z-20 -translate-x-1/2 border-0 border-red-500 sm1:hidden lg:block left-1/2'/>
+          <Image src="/media/projects/journeaze/journeaze1.webp" alt="JournEaze" width={300} height={200} className='relative z-30 transition duration-300 ease-in-out -translate-x-1/2 border-0 border-red-500 cursor-pointer left-1/2 lg:hover:opacity-0' />
+          <Image src="/media/projects/journeaze/journeaze2.webp" alt="JournEaze" width={300} height={200} className='absolute top-0 z-20 -translate-x-1/2 border-0 border-red-500 sm1:hidden lg:block left-1/2'/>
           <div className='absolute top-0 z-40 whitespace-nowrap overflow-hidden font-extrabold text-center sm1:text-[20rem] md:text-[30rem] lowercase text-white tracking-tighter border-0 border-red-500 w-fit h-fit p-0 leading-[24rem] mt-56 md:-left-[10rem] lg:left-1/2'>03.</div>
           <Lottie animationData={sketch} className='absolute top-0 mt-64 -rotate-45 md:block sm1:hidden invert grayscale left-1/2'/>
         </div>
@@ -229,10 +230,10 @@ const Projects = () => {
               <div className='flex justify-between'>
                 <p className='text-5xl font-extrabold underline underline-offset-8'>Journ<span className='text-blue-400'>Eaze</span></p>
                 <div className='flex gap-3 items-start pt-2'>
-                  <a href={'https://journ-eaze-web.vercel.app'} target="_blank" className='hover:scale-[1.2] transition ease-in-out duration-300 text-blue-400 text-sm font-bold border border-blue-400 rounded-lg px-3 py-2'>Live ↗</a>
-                  <a href={'https://github.com/AtulRaj37/JournEaze'} target="_blank" className='hover:scale-[1.2] transition ease-in-out duration-300'>
+                  <MagneticButton><a href={'https://journ-eaze-web.vercel.app'} target="_blank" className='hover:scale-[1.2] transition ease-in-out duration-300 text-blue-400 text-sm font-bold border border-blue-400 rounded-lg px-3 py-2'>Live ↗</a></MagneticButton>
+                  <MagneticButton><a href={'https://github.com/AtulRaj37/JournEaze'} target="_blank" className='hover:scale-[1.2] transition ease-in-out duration-300'>
                     <span className="text-4xl"><FaGithub /></span>
-                  </a>
+                  </a></MagneticButton>
                 </div>
               </div>
               <p className='mt-12'>
@@ -260,8 +261,8 @@ const Projects = () => {
       {/* 4th proj — PitchPulse */}
       <div className='relative mt-8 border-0 border-red-500'>
         <div className='relative border-0 border-blue-400'>
-          <Image src="/media/projects/pitchpulse/phone1.png" alt="PitchPulse" width={300} height={200} className='relative z-30 transition duration-300 ease-in-out -translate-x-1/2 border-0 border-red-500 cursor-pointer left-1/2 lg:hover:opacity-0' />
-          <Image src="/media/projects/pitchpulse/phone2.png" alt="PitchPulse" width={300} height={200} className='absolute top-0 z-20 -translate-x-1/2 border-0 border-red-500 sm1:hidden lg:block left-1/2'/>
+          <Image src="/media/projects/pitchpulse/phone1.webp" alt="PitchPulse" width={300} height={200} className='relative z-30 transition duration-300 ease-in-out -translate-x-1/2 border-0 border-red-500 cursor-pointer left-1/2 lg:hover:opacity-0' />
+          <Image src="/media/projects/pitchpulse/phone2.webp" alt="PitchPulse" width={300} height={200} className='absolute top-0 z-20 -translate-x-1/2 border-0 border-red-500 sm1:hidden lg:block left-1/2'/>
           <div className='absolute top-0 z-40 whitespace-nowrap overflow-hidden font-extrabold text-center sm1:text-[20rem] md:text-[30rem] lowercase text-white tracking-tighter border-0 border-red-500 w-fit h-fit p-0 leading-[24rem] mt-56'>04.</div>
           <Lottie animationData={sketch} className='absolute top-0 mt-64 -rotate-45 md:block sm1:hidden invert grayscale'/>
         </div>
@@ -271,10 +272,10 @@ const Projects = () => {
               <div className='flex justify-between'>
                 <p className='text-5xl font-extrabold underline underline-offset-8'>Pitch<span className='text-blue-400'>Pulse</span></p>
                 <div className='flex gap-3 items-start pt-2'>
-                  <a href={'https://pitch-pulse-frontend-sandy.vercel.app'} target="_blank" className='hover:scale-[1.2] transition ease-in-out duration-300 text-blue-400 text-sm font-bold border border-blue-400 rounded-lg px-3 py-2'>Live ↗</a>
-                  <a href={'https://github.com/AtulRaj37/PitchPulse'} target="_blank" className='hover:scale-[1.2] transition ease-in-out duration-300'>
+                  <MagneticButton><a href={'https://pitch-pulse-frontend-sandy.vercel.app'} target="_blank" className='hover:scale-[1.2] transition ease-in-out duration-300 text-blue-400 text-sm font-bold border border-blue-400 rounded-lg px-3 py-2'>Live ↗</a></MagneticButton>
+                  <MagneticButton><a href={'https://github.com/AtulRaj37/PitchPulse'} target="_blank" className='hover:scale-[1.2] transition ease-in-out duration-300'>
                     <span className="text-4xl"><FaGithub /></span>
-                  </a>
+                  </a></MagneticButton>
                 </div>
               </div>
               <p className='mt-12'>
