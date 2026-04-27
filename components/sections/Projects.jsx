@@ -271,6 +271,7 @@ const Projects = () => {
               <div className='flex justify-between'>
                 <p className='text-5xl font-extrabold underline underline-offset-8'>Pitch<span className='text-blue-400'>Pulse</span></p>
                 <div className='flex gap-3 items-start pt-2'>
+                  <a href={'https://pitch-pulse-frontend-sandy.vercel.app'} target="_blank" className='hover:scale-[1.2] transition ease-in-out duration-300 text-blue-400 text-sm font-bold border border-blue-400 rounded-lg px-3 py-2'>Live ↗</a>
                   <a href={'https://github.com/AtulRaj37/PitchPulse'} target="_blank" className='hover:scale-[1.2] transition ease-in-out duration-300'>
                     <span className="text-4xl"><FaGithub /></span>
                   </a>
